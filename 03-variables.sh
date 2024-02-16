@@ -2,4 +2,4 @@
 
 DATE=$(date)
 
-echo "scripting started executing: ${DATE};
+echo "Scripting started executing: ${DATE}"
