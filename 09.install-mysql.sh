@@ -27,5 +27,5 @@ then
    echo "ERROR:: Installing GIt is failed"
    exit1
 else
-   echo "Installing GIT  is SUCCESS"
+   echo "Installing G  is SUCCESS"
 fi
