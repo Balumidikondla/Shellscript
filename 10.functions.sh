@@ -6,10 +6,10 @@ VALIDATE(){
 
     if [ $ID -ne 0 ]
     then 
-       echo "ERROR::please run this script with rooot user"
+       echo "ERROR:: $2 ... failed"
        exit 1
     else
-       echo "you are root user"
+       echo "$2...SUCCESS"
     fi
 }
 
@@ -23,8 +23,8 @@ fi
 
 yum install mysql -y
 
-VALIDATE
+VALIDATE $? "Installing MYSQL"
 
 yum install git -y
 
-VALIDATE
+VALIDATE $? "Installing GIT"
