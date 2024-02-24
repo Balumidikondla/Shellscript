@@ -23,7 +23,7 @@ if [ $ID -ne 0 ]
 then 
     echo -e "$R Error ::please run this script with root access $N"
 
-    exit1
+exit1
 else 
     echo  "you are root user"
 fi
@@ -38,3 +38,4 @@ do
        echo -e "$package is already installed ...$Y SKIPPING $N"
 fi
  
+}
