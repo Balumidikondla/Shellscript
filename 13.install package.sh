@@ -19,7 +19,7 @@ VALIDATE (){
     fi    
 }
 
-if [$ID -ne 0]
+if [ $ID -ne 0 ]
 then 
     echo -e "$R Error ::please run this script with root access $N"
 
@@ -36,5 +36,5 @@ do
        VALIDATE $? "Installation of $package"
    else
        echo -e "$package is already installed ...$Y SKIPPING $N"
-   fi
+fi
  
