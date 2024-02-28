@@ -23,7 +23,7 @@ if [ $ID -ne 0 ]
 then 
     echo -e "$R Error ::please run this script with root access $N"
     exit1
-else 
+else 1
     echo  "you are root user"
 fi
 for package in $@
